@@ -8,7 +8,9 @@ public class BirdScript : MonoBehaviour
     public LogicScript logic;
     public bool birdIsAlive = true;
     public float camHalfHeight;
-    public float margin = 2f;
+    public float margin = 0.5f;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip flapClip;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,10 +25,11 @@ public class BirdScript : MonoBehaviour
         if (Keyboard.current.spaceKey.wasPressedThisFrame && birdIsAlive)
         {
             myRigidBody.linearVelocity = Vector2.up * flapStrength;
+            audioSource.PlayOneShot(flapClip);
         }
 
         if (transform.position.y > camHalfHeight + margin ||
-            transform.position.y < -camHalfHeight + margin)
+            transform.position.y < -camHalfHeight - margin)
         {
             logic.gameOver();
         }

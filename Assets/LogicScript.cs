@@ -29,7 +29,16 @@ public class LogicScript : MonoBehaviour
 
     void Awake()
     {
-        Time.timeScale = 1f;
+        Time.timeScale = 0f;
+    }
+
+    public void ExitGame()
+    {
+        Debug.Log("Quit");
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+        Application.Quit();
     }
 
 }

@@ -3,6 +3,9 @@ using UnityEngine;
 public class PipeMiddleScript : MonoBehaviour
 {
     public LogicScript logic;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip coinGainClip;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,10 +20,10 @@ public class PipeMiddleScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && collision.gameObject.layer == 3)
+        if (collision.gameObject.CompareTag("Player"))
         {
             logic.AddScore(1);
-            Debug.Log("Trigger hit by: " + collision.gameObject.name);
+            audioSource.PlayOneShot(coinGainClip);
         }
     }
 }
