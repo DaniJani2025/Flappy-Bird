@@ -1,18 +1,30 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LogicScript : MonoBehaviour
 {
     public int playerScore;
-    public Text scoreText;
+    public TextMeshProUGUI currentScoreText;
+    public TextMeshProUGUI topScoreText;
+    public TextMeshProUGUI yourScoreText;
     public GameObject gameOverScreen;
+
+    private int topScore;
+
+    void Start()
+    {
+        topScore = PlayerPrefs.GetInt("TopScore", 0);
+        topScoreText.text = $"Top Score: {topScore}";
+    }
 
     [ContextMenu("Increase Score")]
     public void AddScore(int scoreToAdd)
     {
         playerScore += scoreToAdd;
-        scoreText.text = playerScore.ToString();
+        currentScoreText.text = playerScore.ToString();
+        topScore = PlayerPrefs.GetInt("TopScore", 0);
     }
 
     public void restartGame()
@@ -24,6 +36,15 @@ public class LogicScript : MonoBehaviour
     public void gameOver()
     {
         Time.timeScale = 0f;
+        yourScoreText.text = "Your Score: " + playerScore.ToString();
+        if (playerScore > topScore)
+        {
+            topScore = playerScore;
+            PlayerPrefs.SetInt("TopScore", topScore);
+            PlayerPrefs.Save();
+        }
+
+        topScoreText.text = $"Top Score: {topScore}";
         gameOverScreen.SetActive(true);
     }
 

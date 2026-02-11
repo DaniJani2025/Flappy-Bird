@@ -1,0 +1,390 @@
+fileFormatVersion: 2
+guid: 6b8401afc88242e408ff3e1538943503
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3246158804467940109
+    second: Flappy-Bird-Logo_0
+  - first:
+      213: -3958827482429368930
+    second: Flappy-Bird-Logo_1
+  - first:
+      213: 6319739083775357894
+    second: Flappy-Bird-Logo_2
+  - first:
+      213: -1403502251676640344
+    second: Flappy-Bird-Logo_3
+  - first:
+      213: 8933527300093760369
+    second: Flappy-Bird-Logo_4
+  - first:
+      213: -5308177174219578219
+    second: Flappy-Bird-Logo_5
+  - first:
+      213: 2611828116209109665
+    second: Flappy-Bird-Logo_6
+  - first:
+      213: 8058383094472555329
+    second: Flappy-Bird-Logo_7
+  - first:
+      213: -4874537933339318869
+    second: Flappy-Bird-Logo_8
+  - first:
+      213: -2791187904721302225
+    second: Flappy-Bird-Logo_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flappy-Bird-Logo_0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 427
+        width: 183
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b71d8db3cac0d20800000000000000
+      internalID: 3246158804467940109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flappy-Bird-Logo_1
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 428
+        width: 177
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e955eb6216b6f09c0800000000000000
+      internalID: -3958827482429368930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flappy-Bird-Logo_2
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 425
+        width: 237
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c33599963934b750800000000000000
+      internalID: 6319739083775357894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flappy-Bird-Logo_3
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 427
+        width: 201
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab5a5f5322c58ce0800000000000000
+      internalID: -1403502251676640344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flappy-Bird-Logo_4
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 427
+        width: 201
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173d7516fb34afb70800000000000000
+      internalID: 8933527300093760369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flappy-Bird-Logo_5
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 427
+        width: 225
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5942ec5ebf09556b0800000000000000
+      internalID: -5308177174219578219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flappy-Bird-Logo_6
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 424
+        width: 211
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa850965d31f3420800000000000000
+      internalID: 2611828116209109665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flappy-Bird-Logo_7
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 427
+        width: 79
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14bbc02bab025df60800000000000000
+      internalID: 8058383094472555329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flappy-Bird-Logo_8
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 426
+        width: 210
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5a42773992a5cb0800000000000000
+      internalID: -4874537933339318869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flappy-Bird-Logo_9
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 424
+        width: 229
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d48b59365b349d0800000000000000
+      internalID: -2791187904721302225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Flappy-Bird-Logo_0: 3246158804467940109
+      Flappy-Bird-Logo_1: -3958827482429368930
+      Flappy-Bird-Logo_2: 6319739083775357894
+      Flappy-Bird-Logo_3: -1403502251676640344
+      Flappy-Bird-Logo_4: 8933527300093760369
+      Flappy-Bird-Logo_5: -5308177174219578219
+      Flappy-Bird-Logo_6: 2611828116209109665
+      Flappy-Bird-Logo_7: 8058383094472555329
+      Flappy-Bird-Logo_8: -4874537933339318869
+      Flappy-Bird-Logo_9: -2791187904721302225
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
