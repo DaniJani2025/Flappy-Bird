@@ -22,7 +22,17 @@ public class BirdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current.spaceKey.wasPressedThisFrame && birdIsAlive)
+        if (!logic.gameStarted)
+        {
+            if (FlapPressed())
+                logic.StartGame();
+            return;
+        }
+
+        if (!birdIsAlive)
+            return;
+
+        if (birdIsAlive && FlapPressed())
         {
             myRigidBody.linearVelocity = Vector2.up * flapStrength;
             audioSource.PlayOneShot(flapClip);
@@ -31,13 +41,41 @@ public class BirdScript : MonoBehaviour
         if (transform.position.y > camHalfHeight + margin ||
             transform.position.y < -camHalfHeight - margin)
         {
-            logic.gameOver();
+            Die();
+            Destroy(gameObject);
         }
+    }
+
+    bool FlapPressed()
+    {
+        // keyboard
+        if (Keyboard.current != null &&
+            Keyboard.current.spaceKey.wasPressedThisFrame)
+            return true;
+
+        // mouse click (desktop)
+        if (Mouse.current != null &&
+            Mouse.current.leftButton.wasPressedThisFrame)
+            return true;
+
+        // touch input (mobile)
+        if (Touchscreen.current != null &&
+            Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
+            return true;
+
+        return false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        logic.gameOver();
+        Die();
+    }
+
+    void Die()
+    {
+        if (!birdIsAlive) return;
+
         birdIsAlive = false;
+        logic.gameOver();
     }
 }
