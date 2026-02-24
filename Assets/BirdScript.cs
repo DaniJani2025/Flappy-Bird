@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 
 public class BirdScript : MonoBehaviour
 {
@@ -48,17 +49,15 @@ public class BirdScript : MonoBehaviour
 
     bool FlapPressed()
     {
-        // keyboard
         if (Keyboard.current != null &&
             Keyboard.current.spaceKey.wasPressedThisFrame)
             return true;
 
-        // mouse click (desktop)
         if (Mouse.current != null &&
-            Mouse.current.leftButton.wasPressedThisFrame)
+            Mouse.current.leftButton.wasPressedThisFrame &&
+            !EventSystem.current.IsPointerOverGameObject())
             return true;
 
-        // touch input (mobile)
         if (Touchscreen.current != null &&
             Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
             return true;
